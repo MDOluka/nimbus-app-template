@@ -6,7 +6,7 @@ import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/nimbus-app-template">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
@@ -14,5 +14,5 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
